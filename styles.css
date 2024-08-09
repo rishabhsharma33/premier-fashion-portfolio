@@ -1,0 +1,778 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #f9f9f8;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #F9F9F8;
+    position: relative;
+    padding-top: 0.1px;
+}
+
+#nav{
+    margin-top: 40px;
+    width: 100%;
+    height: 12vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h3{
+    display: none;
+}
+
+#nav h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    border-right: 2px solid black;
+}
+
+#nav h2:nth-last-child(1){
+    width: 10%;
+    border-right: none;
+}
+
+#nav h2:nth-last-child(2){
+    width: 10%;
+}
+
+#nav h1{
+    letter-spacing: -2px;
+    height: 100%;
+    width: 20%;
+    font-family: monument;
+    font-size: 34px;
+    padding-left: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#nav h1::after{
+    content: "©️";
+    font-family: gilroy;
+    font-weight: 300;
+    font-size: 16px;
+    position: absolute;
+    top: 17%;
+    right: -3%;
+}
+
+#center{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    padding: 5vw;
+}
+
+#center #content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    /* background-color: red; */
+    bottom: 0;
+    padding: 2vw;
+    color: #fff;
+}
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#over1 h1{
+    font-family: monument;
+    font-size: 3.6vw;
+    font-weight: 100;
+    mix-blend-mode: difference;
+}
+
+#over1 h2{
+    font-size: 2vw;
+    padding: 2.2vw 2.2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1.5vw 1.5vw 1.5vw .5vw;
+}
+
+#over2 h4{
+    font-size: 2vw;
+    font-weight: 500;
+
+}
+
+#over2 img{
+    height: 3vw;
+}
+
+#scroll{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroll img{
+    /* display: none; */
+    height: 100%;
+    border-radius: 50%;
+    width: 15.4%;
+    object-fit: cover;
+    object-position: top;
+    margin: .8vw;
+}
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#alphabet h5{
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    margin-right: 2vw;
+}
+
+#alphabet h6{
+    font-size: 1vw;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0.6vw 0.8vw;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+#alphabet h6:hover{
+    border: 1px solid black;
+}
+
+#page2{
+    height: 110%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+
+#page2-part1{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1462804993656-fac4ff489837?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: top;
+}
+
+#page2-part2{
+    width: 47%;
+    height: 100%;
+}
+
+#page2-part2 img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+#p2-txt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5vw;
+    margin-top: 6vh;
+    padding: 1vw 2vw;
+}
+
+#page2-part2::after{
+    content: 'VOGUE / SHOT';
+    font-weight: normal;
+    font-family: monument;
+    font-size: 4vw;
+}
+
+#p2-text h3{
+    font-weight: 100;
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+}
+
+#page3>h1{
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    margin-bottom: 8vh;
+}
+
+.elem{
+    height: 20vh;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+}
+
+.elem img{
+    height: 100px;
+    width: 96px;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    border-radius: 50%;
+    left: 20%;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.elem .elem-part2{
+    width: 45%;
+}
+
+.elem-part2>h1{
+    font-weight: 400;
+    font-size: 2.4vw;
+}
+
+.elem-part2>h5{
+    font-size: 0.9vw;
+    text-transform: uppercase;
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+
+.elem>h4{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 6%;
+}
+
+.elem:hover img{
+    opacity: 1;
+    left: 25%;
+}
+
+#page4{
+    margin-top: 30vh;
+    width: 100%;
+    height: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page4-left{
+    height: 100%;
+    width: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+#page4-left img{
+    border: 1.2px solid black;
+    border-radius: 50%;
+    padding: 3vw 3vw;
+    border-style: dotted;
+}
+
+#page4-left h3{
+    text-align:start;
+    text-transform: uppercase;
+    margin-right: 3vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: monument;
+    font-weight: 100;
+}
+
+#page4-right{
+    height: 100%;
+    width: 70%;
+}
+
+#page4-right img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page4-last{
+    width: 125%;
+    height: 120vh;
+}
+
+#page4-last img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+    padding: 5vw 3vw;
+}
+
+#marque{
+    height: 12vh;
+    width: 100%;
+    margin-top: -22vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: monument;
+    margin-right: 16px;
+    letter-spacing: 2px;
+    animation-name: anima;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes anima {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+#footer{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer h1{
+    font-family: monument;
+    letter-spacing: -1px;
+    font-size: 3vw;
+}
+
+#footer h2{
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    #nav{
+        margin-top: 20px;
+        width: 100%;
+        height: 8vh;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #nav h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        height: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        border-right: 2px solid black;
+        display: none;
+    }
+    
+    #nav h2:nth-last-child(1){
+        width: 10%;
+        border-right: none;
+    }
+    
+    #nav h2:nth-last-child(2){
+        width: 30%;
+    }
+    
+    #nav h1{
+        letter-spacing: -2px;
+        width: 20%;
+        font-family: monument;
+        font-size: 34px;
+        padding-left: 6vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    #nav h3{
+        display: block;
+        padding-right:6vw;
+    }
+    
+    #nav h1::after{
+        display: none;
+    }
+
+    #center{
+        height: 40%;
+        position: relative;
+        width: 100%;
+        padding: 5vw;
+    }
+    
+    #center #content{
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #content video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #overlay{
+        height: 44%;
+        width: 100%;
+        position: absolute;
+        /* background-color: red; */
+        bottom: 0;
+        padding: 2vw;
+        color: #fff;
+    }
+    
+    #over1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #over1 h1{
+        font-family: monument;
+        font-size: 3.6vw;
+        font-weight: 100;
+        mix-blend-mode: difference;
+    }
+    
+    #over1 h2{
+        font-size: 2vw;
+        padding: 2.2vw 2.2vw;
+        /* background-color: blue; */
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+    
+    #over2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid #fff;
+        padding: 1.5vw 1.5vw 1.5vw .5vw;
+    }
+    
+    #over2 h4{
+        font-size: 2vw;
+        font-weight: 500;
+    
+    }
+    
+    #over2 img{
+        height: 3vw;
+    }
+
+    #scroll{
+        height: 16vh;
+        margin-bottom: 5vh;
+    }
+    
+    #scroll img{
+        margin: 2.1vw;
+    }
+
+    #alphabet{
+        height: 4vh;
+        gap: 1vw;
+    }
+
+    #page2{
+        height: 56%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vw 5vw;
+    }
+    
+    #page2-part1{
+        width: 50%;
+        height: 100%;
+        background-image: url(https://images.unsplash.com/photo-1462804993656-fac4ff489837?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-position: top;
+    }
+    
+    #page2-part2{
+        width: 47%;
+        height: 100%;
+    }
+    
+    #page2-part2 img{
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+    
+    #p2-txt{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1.5vw;
+        margin-top: 6vh;
+        padding: 1vw 2vw;
+    }
+    
+    #page2-part2::after{
+        content: 'VOGUE / SHOT';
+        font-weight: normal;
+        font-family: monument;
+        font-size: 4.5vw;
+    }
+    
+    #p2-text h3{
+        font-weight: 100;
+    }
+
+    #page3{
+        height: 20%;
+        width: 100%;
+        position: relative;
+        padding: 5vw 4vw;
+    }
+    
+    #page3>h1{
+        text-align: center;
+        font-family: monument;
+        text-transform: uppercase;
+        font-size: 3vw;
+        margin-bottom: 8vh;
+    }
+    
+    .elem{
+        height: 10vh;
+        width: 100%;
+        border-top: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2vw;
+        position: relative;
+    }
+    
+    .elem img{
+        height: 50px;
+        width: 45px;
+        object-fit: cover;
+        object-position: top;
+        position: absolute;
+        border-radius: 50%;
+        left: 25%;
+        opacity: 1;
+        transition: all ease 0.5s;
+    }
+    
+    .elem .elem-part2{
+        width: 45%;
+    }
+    
+    .elem-part2>h1{
+        font-weight: 400;
+        font-size: 2.4vw;
+    }
+    
+    .elem-part2>h5{
+        font-size: 0.9vw;
+        text-transform: uppercase;
+    }
+    
+    .elem:nth-last-child(1){
+        border-bottom: 2px solid black;
+    }
+    
+    .elem>h4{
+        font-size: 1.5vw;
+        text-transform: uppercase;
+        font-weight: 500;
+        width: 6%;
+    }
+
+    #page4{
+        margin-top: 40vh;
+        width: 100%;
+        height: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #page4-left{
+        height: 100%;
+        width: 29%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+    
+    #page4-left img{
+        border: 1.2px solid black;
+        border-radius: 50%;
+        padding: 1vw 1vw;
+        border-style: dotted;
+        display: none;
+    }
+    
+    #page4-left h3{
+        text-align:start;
+        text-transform: uppercase;
+        margin-right: 3vw;
+        font-size: 1.5vw;
+        font-weight: bold;
+        font-family: monument;
+        font-weight: 100;
+    }
+    
+    #page4-right{
+        height: 100%;
+        width: 70%;
+    }
+    
+    #page4-right img{
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #page4-last{
+        width: 125%;
+        height: 120vh;
+    }
+    
+    #page4-last img{
+        width: 80%;
+        height: 80%;
+        padding: 5vw 3vw;
+    }
+
+    #marque{
+        height: 5.4vh;
+    }
+    
+    #marque h1{
+        -webkit-text-stroke: 1px black;
+    }
+}
