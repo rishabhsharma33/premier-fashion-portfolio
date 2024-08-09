@@ -15,7 +15,7 @@ Welcome to the **Premier Fashion Portfolio** project! This repository contains a
 - **Multimedia Integration**: Embedded video and high-quality images to provide an immersive experience.
 
 ## Live Demo
-Check out the live demo of the project [here](#).
+Check out the live demo of the project [here](https://rishabhsharma33.github.io/premier-fashion-portfolio/).
 
 ## Installation
 To get a local copy of the project, follow these simple steps:
